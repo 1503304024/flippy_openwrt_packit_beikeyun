@@ -135,7 +135,7 @@ rootfstype=btrfs
 rootflags=compress=zstd:${ZSTD_LEVEL}
 extraargs=usbcore.autosuspend=-1
 extraboardargs=
-fdtfile=/dtb/rockchip/rk3328-beikeyun-1296mhz.dtb
+fdtfile=/dtb/rockchip/rk3328-beikeyun-1200mhz.dtb
 kernel_addr_r=0x02000000
 ramdisk_addr_r=0x06000000
 EOF

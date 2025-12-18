@@ -153,7 +153,7 @@ init_var() {
     sudo apt-get -qq install -y curl git coreutils p7zip p7zip-full zip unzip gzip xz-utils pigz zstd jq tar
 
     # Accept user-defined repository parameters
-    SCRIPT_REPO_URL="${SCRIPT_REPO_URL:-${SCRIPT_REPO_URL_VALUE}}"
+    SCRIPT_REPO_URL="${SCRIPT_REPO_URL_VALUE}"
     [[ "${SCRIPT_REPO_URL,,}" =~ ^http ]] || SCRIPT_REPO_URL="https://github.com/${SCRIPT_REPO_URL}"
     SCRIPT_REPO_BRANCH="${SCRIPT_REPO_BRANCH:-${SCRIPT_REPO_BRANCH_VALUE}}"
     SELECT_PACKITPATH="${SELECT_PACKITPATH:-${SELECT_PACKITPATH_VALUE}}"
